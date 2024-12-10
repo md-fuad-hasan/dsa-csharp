@@ -23,8 +23,16 @@ namespace DSAPractice.SinglyLinkedList
 
             sl.Remove();
             sl.Remove();
+            sl.Insert(9);
 
-            Console.Write($"The list is : ");
+            sl.Clear();
+            sl.Remove();
+            sl.Insert(7);
+            sl.Insert(9);
+            sl.InsertAt(2, 5);
+            sl.RemoveAt(0);
+
+           
             sl.Display();
             Console.WriteLine();
 
