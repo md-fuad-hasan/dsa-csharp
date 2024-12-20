@@ -1,4 +1,5 @@
 ﻿using DSAPractice.SinglyLinkedList;
+using DSAPractice.Stack;
 
 namespace DSAPractice
 {
@@ -7,7 +8,9 @@ namespace DSAPractice
         static void Main(string[] args)
         {
 
-            NewSinglyLinkedList newSinglyLinkedList = new NewSinglyLinkedList();
+           // NewSinglyLinkedList newSinglyLinkedList = new NewSinglyLinkedList();
+
+            NewStack newStack = new NewStack();
 
         }
     }
