@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DSAPractice.SinglyLinkedList
+namespace DSAPractice.LinkedList.SinglyLinkedList
 {
     public class SinglyLinkedList
     {
@@ -38,7 +38,7 @@ namespace DSAPractice.SinglyLinkedList
 
         public void InsertAt(int index, int value)
         {
-            if(index< 0)
+            if (index < 0)
             {
                 Console.WriteLine("The index is out of bounds.");
 
@@ -57,7 +57,7 @@ namespace DSAPractice.SinglyLinkedList
 
                 return;
             }
-           if(index == 0)
+            if (index == 0)
             {
                 SinglyNode node = new SinglyNode(value);
                 node.next = head;
@@ -71,7 +71,7 @@ namespace DSAPractice.SinglyLinkedList
             while (current.next != null)
             {
                 i++;
-                if(i == index)
+                if (i == index)
                 {
                     SinglyNode node = new SinglyNode(value);
                     node.next = current.next;
@@ -86,39 +86,39 @@ namespace DSAPractice.SinglyLinkedList
             {
                 SinglyNode node = new SinglyNode(value);
                 current.next = node;
-                return ;
+                return;
             }
 
             Console.WriteLine("The index is out of bounds.");
-            
+
         }
 
         public void Remove()
         {
             SinglyNode current = head;
-            if(current == null)
+            if (current == null)
             {
                 Console.WriteLine("The list is already empty.");
                 return;
             }
-            if(current.next == null)
+            if (current.next == null)
             {
                 head = null;
                 return;
             }
 
-            while(current.next.next != null)
+            while (current.next.next != null)
             {
                 current = current.next;
             }
-          
+
             current.next = null;
 
         }
 
         public void RemoveAt(int index)
         {
-            if(index < 0)
+            if (index < 0)
             {
                 Console.WriteLine("The index is out of bounds.");
                 return;
@@ -131,7 +131,7 @@ namespace DSAPractice.SinglyLinkedList
             }
             if (current.next == null)
             {
-                if(index == 0)
+                if (index == 0)
                 {
                     head = null;
                     return;
@@ -141,7 +141,7 @@ namespace DSAPractice.SinglyLinkedList
 
             }
 
-            if(index == 0)
+            if (index == 0)
             {
                 head = head.next;
                 return;
@@ -151,7 +151,7 @@ namespace DSAPractice.SinglyLinkedList
             while (current.next.next != null)
             {
                 i++;
-                if(i == index)
+                if (i == index)
                 {
                     current.next = current.next.next;
                     return;
@@ -159,7 +159,7 @@ namespace DSAPractice.SinglyLinkedList
                 current = current.next;
             }
             i++;
-            if(i == index)
+            if (i == index)
             {
                 current.next = current.next.next;
                 return;
@@ -172,7 +172,7 @@ namespace DSAPractice.SinglyLinkedList
         {
             int count = 0;
             SinglyNode current = head;
-            while(current != null)
+            while (current != null)
             {
                 count++;
                 current = current.next;
@@ -187,7 +187,7 @@ namespace DSAPractice.SinglyLinkedList
             SinglyNode current = head;
             while (current != null)
             {
-                if(current.value == val)
+                if (current.value == val)
                 {
                     return true;
                 }
@@ -204,7 +204,7 @@ namespace DSAPractice.SinglyLinkedList
 
         public void Display()
         {
-            if(head == null)
+            if (head == null)
             {
                 Console.WriteLine("The list is empty.");
                 return;
@@ -218,7 +218,7 @@ namespace DSAPractice.SinglyLinkedList
             }
         }
 
-       
+
 
     }
 }

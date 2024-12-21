@@ -4,12 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DSAPractice.SinglyLinkedList
+namespace DSAPractice.LinkedList.SinglyLinkedList
 {
     public class NewSinglyLinkedList
     {
 
-        
+
         public NewSinglyLinkedList()
         {
             SinglyLinkedList sl = new SinglyLinkedList();
@@ -32,7 +32,7 @@ namespace DSAPractice.SinglyLinkedList
             sl.InsertAt(2, 5);
             sl.RemoveAt(0);
 
-           
+
             sl.Display();
             Console.WriteLine();
 

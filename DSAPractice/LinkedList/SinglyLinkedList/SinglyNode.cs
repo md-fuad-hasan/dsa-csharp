@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DSAPractice.SinglyLinkedList
+namespace DSAPractice.LinkedList.SinglyLinkedList
 {
     internal class SinglyNode
     {
@@ -14,7 +14,7 @@ namespace DSAPractice.SinglyLinkedList
         public SinglyNode(int value)
         {
             this.value = value;
-            this.next = null;
+            next = null;
         }
     }
 }

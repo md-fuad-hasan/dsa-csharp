@@ -1,5 +1,6 @@
-﻿using DSAPractice.Queue;
-using DSAPractice.SinglyLinkedList;
+﻿using DSAPractice.LinkedList.SinglyLinkedList;
+using DSAPractice.PriorityQueue.AscendingPriorityQueue;
+using DSAPractice.Queue;
 using DSAPractice.Stack;
 
 namespace DSAPractice
@@ -9,10 +10,10 @@ namespace DSAPractice
         static void Main(string[] args)
         {
 
-           // NewSinglyLinkedList newSinglyLinkedList = new NewSinglyLinkedList();
+           //NewSinglyLinkedList newSinglyLinkedList = new NewSinglyLinkedList();
            // NewStack newStack = new NewStack();
-
-            NewQueue newQueue = new NewQueue();
+            //NewQueue newQueue = new NewQueue();
+            NewAscendingPriorityQueue newAscendingPriorityQueue =  new NewAscendingPriorityQueue();
 
         }
     }
