@@ -1,4 +1,5 @@
-﻿using DSAPractice.SinglyLinkedList;
+﻿using DSAPractice.Queue;
+using DSAPractice.SinglyLinkedList;
 using DSAPractice.Stack;
 
 namespace DSAPractice
@@ -9,8 +10,9 @@ namespace DSAPractice
         {
 
            // NewSinglyLinkedList newSinglyLinkedList = new NewSinglyLinkedList();
+           // NewStack newStack = new NewStack();
 
-            NewStack newStack = new NewStack();
+            NewQueue newQueue = new NewQueue();
 
         }
     }

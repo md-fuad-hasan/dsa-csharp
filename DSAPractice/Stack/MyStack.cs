@@ -37,13 +37,6 @@ namespace DSAPractice.Stack
                 return null;
             }
             StackNode current = top;
-
-            if ( top.previous == null )
-            {
-                top = null;
-                return current.value;
-            }
-            
             top = current.previous;
 
             return current.value;
