@@ -76,6 +76,16 @@ namespace DSAPractice.LinkedList.DoublyLinkedList
             dls.Display();
             dls.DisplayReverse();
 
+            dls.Remove();
+            dls.Remove();
+            dls.Remove();
+            dls.Remove();
+            dls.Remove();
+            dls.RemoveAt(1);
+
+            dls.Display();
+            dls.DisplayReverse();
+
         }
     }
 }

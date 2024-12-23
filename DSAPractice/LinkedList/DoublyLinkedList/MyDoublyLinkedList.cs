@@ -119,7 +119,65 @@ namespace DSAPractice.LinkedList.DoublyLinkedList
             tail.next = null;
         }
 
-       
+        public void RemoveAt(int idx)
+        {
+            if (idx < 0)
+            {
+                Console.WriteLine("The index is out of bounds.");
+                return;
+            }
+            if(head == null)
+            {
+                Console.WriteLine("The list is already Empty.");
+                return;
+            }
+            DoublyNode current = head;
+
+            if (head.next == null)
+            {
+                if (idx == 0)
+                {
+                    head = tail = null;
+                    return;
+                }
+                Console.WriteLine("The index is out of bounds.");
+                return;
+            }
+
+            int i = 0;
+
+            if(idx == i)
+            {
+                head = head.next;
+                head.previous = null;
+
+                return;
+            }
+
+            while (current.next.next != null)
+            {
+                i++;
+                if (i == idx)
+                {
+                    current.next.next.previous = current;
+                    current.next = current.next.next;
+                    return;
+                }
+                current = current.next;
+            }
+
+            i++;
+            if(i == idx)
+            {
+                tail = current;
+                tail.next = null ;
+                return;
+            }
+
+            Console.WriteLine("The index is out of bounds.");
+
+
+        }
 
         public int Count()
         {
