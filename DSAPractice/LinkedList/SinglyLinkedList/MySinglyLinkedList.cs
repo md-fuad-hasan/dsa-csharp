@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace DSAPractice.LinkedList.SinglyLinkedList
 {
-    public class SinglyLinkedList
+    public class MySinglyLinkedList
     {
         private SinglyNode? head;
 
 
-        public SinglyLinkedList()
+        public MySinglyLinkedList()
         {
             head = null;
         }

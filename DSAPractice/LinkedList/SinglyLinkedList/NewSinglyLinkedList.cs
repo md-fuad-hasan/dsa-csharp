@@ -12,7 +12,7 @@ namespace DSAPractice.LinkedList.SinglyLinkedList
 
         public NewSinglyLinkedList()
         {
-            SinglyLinkedList sl = new SinglyLinkedList();
+            MySinglyLinkedList sl = new MySinglyLinkedList();
 
             sl.Insert(5);
             sl.Insert(6);
