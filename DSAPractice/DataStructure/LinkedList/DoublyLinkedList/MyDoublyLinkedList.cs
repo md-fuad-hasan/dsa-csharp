@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DSAPractice.LinkedList.DoublyLinkedList
+namespace DSAPractice.DataStructure.LinkedList.DoublyLinkedList
 {
     public class MyDoublyLinkedList
     {
@@ -39,7 +39,7 @@ namespace DSAPractice.LinkedList.DoublyLinkedList
 
         public void InsertAt(int idx, int val)
         {
-            if(idx< 0)
+            if (idx < 0)
             {
                 Console.WriteLine("The index is out of bounds.");
                 return;
@@ -47,20 +47,20 @@ namespace DSAPractice.LinkedList.DoublyLinkedList
 
             if (head == null)
             {
-                if( idx == 0)
+                if (idx == 0)
                 {
-                    head  =  tail = new DoublyNode(val);
+                    head = tail = new DoublyNode(val);
                     return;
                 }
 
                 Console.WriteLine("The index is out of bounds.");
 
-                return ;
+                return;
             }
 
             DoublyNode newNode = new DoublyNode(val);
             DoublyNode current = head;
-            if(idx == 0)
+            if (idx == 0)
             {
                 newNode.next = head;
                 head.previous = newNode;
@@ -70,7 +70,7 @@ namespace DSAPractice.LinkedList.DoublyLinkedList
                 return;
             }
             int i = 0;
-            while( current.next != null )
+            while (current.next != null)
             {
                 i++;
                 if (i == idx)
@@ -87,7 +87,7 @@ namespace DSAPractice.LinkedList.DoublyLinkedList
                 current = current.next;
             }
             i++;
-            if(i == idx)
+            if (i == idx)
             {
                 current.next = newNode;
                 newNode.previous = current;
@@ -98,18 +98,18 @@ namespace DSAPractice.LinkedList.DoublyLinkedList
             }
 
             Console.WriteLine("The index is out of bounds.");
-            
+
 
         }
 
         public void Remove()
         {
-            if(tail == null)
+            if (tail == null)
             {
                 Console.WriteLine("The list is already Empty");
                 return;
             }
-            if(tail.previous == null)
+            if (tail.previous == null)
             {
                 head = tail = null;
                 return;
@@ -126,7 +126,7 @@ namespace DSAPractice.LinkedList.DoublyLinkedList
                 Console.WriteLine("The index is out of bounds.");
                 return;
             }
-            if(head == null)
+            if (head == null)
             {
                 Console.WriteLine("The list is already Empty.");
                 return;
@@ -146,7 +146,7 @@ namespace DSAPractice.LinkedList.DoublyLinkedList
 
             int i = 0;
 
-            if(idx == i)
+            if (idx == i)
             {
                 head = head.next;
                 head.previous = null;
@@ -167,10 +167,10 @@ namespace DSAPractice.LinkedList.DoublyLinkedList
             }
 
             i++;
-            if(i == idx)
+            if (i == idx)
             {
                 tail = current;
-                tail.next = null ;
+                tail.next = null;
                 return;
             }
 
@@ -185,7 +185,7 @@ namespace DSAPractice.LinkedList.DoublyLinkedList
 
             DoublyNode current = head;
 
-            while(current != null)
+            while (current != null)
             {
                 cnt++;
                 current = current.next;
@@ -205,7 +205,7 @@ namespace DSAPractice.LinkedList.DoublyLinkedList
             }
             while (current != null)
             {
-                Console.Write(current.value+" ");
+                Console.Write(current.value + " ");
                 current = current.next;
             }
             Console.WriteLine();
@@ -216,14 +216,14 @@ namespace DSAPractice.LinkedList.DoublyLinkedList
         {
             DoublyNode? current = tail;
 
-            if(current == null)
+            if (current == null)
             {
                 Console.WriteLine("The List is Empty.");
                 return;
             }
             while (current != null)
             {
-                Console.Write(current.value+" ");
+                Console.Write(current.value + " ");
                 current = current.previous;
             }
 

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DSAPractice.Stack
+namespace DSAPractice.DataStructure.Stack
 {
     public class StackNode
     {
@@ -13,8 +13,8 @@ namespace DSAPractice.Stack
 
         public StackNode(int val)
         {
-            this.value = val;
-            this.previous = null;
+            value = val;
+            previous = null;
         }
     }
 }

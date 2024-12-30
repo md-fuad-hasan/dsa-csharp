@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DSAPractice.Stack
+namespace DSAPractice.DataStructure.Stack
 {
     public class MyStack
     {
@@ -16,7 +16,7 @@ namespace DSAPractice.Stack
 
         public void Push(int val)
         {
-            if(top == null)
+            if (top == null)
             {
                 top = new StackNode(val);
                 return;
@@ -31,7 +31,7 @@ namespace DSAPractice.Stack
 
         public int? Pop()
         {
-            if( top == null)
+            if (top == null)
             {
                 Console.WriteLine("The Stack is already empty");
                 return null;
@@ -45,7 +45,7 @@ namespace DSAPractice.Stack
 
         public int? Top()
         {
-            if( top == null)
+            if (top == null)
             {
                 Console.WriteLine("The stack is empty!");
                 return null;
@@ -60,7 +60,7 @@ namespace DSAPractice.Stack
 
             StackNode? current = top;
 
-            while( current != null )
+            while (current != null)
             {
                 cnt++;
                 current = current.previous;
@@ -73,15 +73,15 @@ namespace DSAPractice.Stack
         public void Display()
         {
             StackNode? current = top;
-            if( current == null )
+            if (current == null)
             {
                 Console.WriteLine("The stack is empty.");
                 return;
             }
 
-            while(current != null)
+            while (current != null)
             {
-                Console.Write(current.value+ " ");
+                Console.Write(current.value + " ");
                 current = current.previous;
             }
 

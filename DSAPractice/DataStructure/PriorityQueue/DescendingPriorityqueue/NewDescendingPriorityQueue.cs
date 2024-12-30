@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DSAPractice.PriorityQueue.DescendingPriorityqueue
+namespace DSAPractice.DataStructure.PriorityQueue.DescendingPriorityqueue
 {
     public class NewDescendingPriorityQueue
     {

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DSAPractice.LinkedList.SinglyLinkedList
+namespace DSAPractice.DataStructure.LinkedList.SinglyLinkedList
 {
     internal class SinglyNode
     {

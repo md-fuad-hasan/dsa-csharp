@@ -4,19 +4,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DSAPractice.Queue
+namespace DSAPractice.DataStructure.Queue
 {
     public class MyQueue
     {
         private QueueNode? front;
-        public MyQueue() 
+        public MyQueue()
         {
             front = null;
         }
 
         public void Enqueue(int val)
         {
-            if(front == null)
+            if (front == null)
             {
                 front = new QueueNode(val);
                 return;
@@ -24,7 +24,7 @@ namespace DSAPractice.Queue
 
             QueueNode current = front;
 
-            while(current.next != null)
+            while (current.next != null)
             {
 
                 current = current.next;
@@ -35,7 +35,7 @@ namespace DSAPractice.Queue
 
         public int? Dequeue()
         {
-            if(front == null)
+            if (front == null)
             {
                 return null;
             }
@@ -48,7 +48,7 @@ namespace DSAPractice.Queue
 
         public int? Front()
         {
-            if(front == null)
+            if (front == null)
             {
                 return null;
             }
@@ -60,7 +60,7 @@ namespace DSAPractice.Queue
         {
             int cnt = 0;
             QueueNode? current = front;
-            while(current != null)
+            while (current != null)
             {
                 cnt++;
                 current = current.next;
@@ -72,14 +72,14 @@ namespace DSAPractice.Queue
         public void Display()
         {
             QueueNode? current = front;
-            if(current == null)
+            if (current == null)
             {
                 Console.WriteLine("The Queue is empty.");
             }
 
             while (current != null)
             {
-                Console.Write(current.value+ " ");
+                Console.Write(current.value + " ");
                 current = current.next;
             }
 

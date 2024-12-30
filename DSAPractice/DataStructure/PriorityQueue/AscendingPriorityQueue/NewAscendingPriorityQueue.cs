@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DSAPractice.PriorityQueue.AscendingPriorityQueue
+namespace DSAPractice.DataStructure.PriorityQueue.AscendingPriorityQueue
 {
     public class NewAscendingPriorityQueue
     {
@@ -23,7 +23,7 @@ namespace DSAPractice.PriorityQueue.AscendingPriorityQueue
 
             apq.Display();
 
-            apq.Dequeue();  
+            apq.Dequeue();
             apq.Display();
             apq.Dequeue();
             apq.Display();

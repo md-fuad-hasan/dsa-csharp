@@ -1,18 +1,16 @@
-﻿using DSAPractice.Queue;
+﻿using DSAPractice.DataStructure.Queue;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DSAPractice.PriorityQueue.DescendingPriorityqueue
+namespace DSAPractice.DataStructure.PriorityQueue.AscendingPriorityQueue
 {
-    public class MyDescendingPriorityQueue
+    public class MyAscendingPriorityQueue
     {
-
-
         public QueueNode? front;
-        public MyDescendingPriorityQueue()
+        public MyAscendingPriorityQueue()
         {
             front = null;
         }
@@ -27,7 +25,7 @@ namespace DSAPractice.PriorityQueue.DescendingPriorityqueue
 
                 return;
             }
-            if (front.value < val)
+            if (front.value > val)
             {
                 queueNode.next = front;
                 front = queueNode;
@@ -36,7 +34,7 @@ namespace DSAPractice.PriorityQueue.DescendingPriorityqueue
             QueueNode? current = front;
             while (current.next != null)
             {
-                if (current.next.value < val)
+                if (current.next.value > val)
                 {
                     queueNode.next = current.next;
                     current.next = queueNode;
@@ -73,7 +71,7 @@ namespace DSAPractice.PriorityQueue.DescendingPriorityqueue
         public int Count()
         {
             int cnt = 0;
-            QueueNode? current = front;
+            QueueNode current = front;
             while (current != null)
             {
                 cnt++;
@@ -103,4 +101,3 @@ namespace DSAPractice.PriorityQueue.DescendingPriorityqueue
         }
     }
 }
-

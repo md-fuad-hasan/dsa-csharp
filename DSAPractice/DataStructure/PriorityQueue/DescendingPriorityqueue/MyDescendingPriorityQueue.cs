@@ -1,16 +1,18 @@
-﻿using DSAPractice.Queue;
+﻿using DSAPractice.DataStructure.Queue;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DSAPractice.PriorityQueue.AscendingPriorityQueue
+namespace DSAPractice.DataStructure.PriorityQueue.DescendingPriorityqueue
 {
-    public class MyAscendingPriorityQueue
+    public class MyDescendingPriorityQueue
     {
+
+
         public QueueNode? front;
-        public MyAscendingPriorityQueue()
+        public MyDescendingPriorityQueue()
         {
             front = null;
         }
@@ -25,7 +27,7 @@ namespace DSAPractice.PriorityQueue.AscendingPriorityQueue
 
                 return;
             }
-            if (front.value > val)
+            if (front.value < val)
             {
                 queueNode.next = front;
                 front = queueNode;
@@ -34,7 +36,7 @@ namespace DSAPractice.PriorityQueue.AscendingPriorityQueue
             QueueNode? current = front;
             while (current.next != null)
             {
-                if (current.next.value > val)
+                if (current.next.value < val)
                 {
                     queueNode.next = current.next;
                     current.next = queueNode;
@@ -49,7 +51,7 @@ namespace DSAPractice.PriorityQueue.AscendingPriorityQueue
 
         public int? Dequeue()
         {
-            if(front == null)
+            if (front == null)
             {
                 return null;
             }
@@ -71,7 +73,7 @@ namespace DSAPractice.PriorityQueue.AscendingPriorityQueue
         public int Count()
         {
             int cnt = 0;
-            QueueNode current = front;
+            QueueNode? current = front;
             while (current != null)
             {
                 cnt++;
@@ -85,7 +87,7 @@ namespace DSAPractice.PriorityQueue.AscendingPriorityQueue
         public void Display()
         {
             QueueNode? current = front;
-            if(current == null)
+            if (current == null)
             {
                 Console.WriteLine("The Queue is empty.");
                 return;
@@ -101,3 +103,4 @@ namespace DSAPractice.PriorityQueue.AscendingPriorityQueue
         }
     }
 }
+

@@ -1,9 +1,10 @@
-﻿using DSAPractice.LinkedList.DoublyLinkedList;
-using DSAPractice.LinkedList.SinglyLinkedList;
-using DSAPractice.PriorityQueue.AscendingPriorityQueue;
-using DSAPractice.PriorityQueue.DescendingPriorityqueue;
-using DSAPractice.Queue;
-using DSAPractice.Stack;
+﻿using DSAPractice.DataStructure.LinkedList.DoublyLinkedList;
+using DSAPractice.DataStructure.LinkedList.SinglyLinkedList;
+using DSAPractice.DataStructure.PriorityQueue.AscendingPriorityQueue;
+using DSAPractice.DataStructure.PriorityQueue.DescendingPriorityqueue;
+using DSAPractice.DataStructure.Queue;
+using DSAPractice.DataStructure.Stack;
+
 
 namespace DSAPractice
 {
@@ -12,11 +13,11 @@ namespace DSAPractice
         static void Main(string[] args)
         {
 
-           //NewSinglyLinkedList newSinglyLinkedList = new NewSinglyLinkedList();
-           //NewStack newStack = new NewStack();
-           //NewQueue newQueue = new NewQueue();
-           //NewAscendingPriorityQueue newAscendingPriorityQueue =  new NewAscendingPriorityQueue();
-           //NewDescendingPriorityQueue newDescendingPriorityQueue = new NewDescendingPriorityQueue();
+           NewSinglyLinkedList newSinglyLinkedList = new NewSinglyLinkedList();
+           NewStack newStack = new NewStack();
+           NewQueue newQueue = new NewQueue();
+           NewAscendingPriorityQueue newAscendingPriorityQueue =  new NewAscendingPriorityQueue();
+           NewDescendingPriorityQueue newDescendingPriorityQueue = new NewDescendingPriorityQueue();
 
             NewDoublyLinkedList newDoublyLinkedList = new NewDoublyLinkedList();
 

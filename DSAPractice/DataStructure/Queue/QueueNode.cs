@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DSAPractice.Queue
+namespace DSAPractice.DataStructure.Queue
 {
     public class QueueNode
     {

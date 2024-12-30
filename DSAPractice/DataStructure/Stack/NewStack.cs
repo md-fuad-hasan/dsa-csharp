@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DSAPractice.Stack
+namespace DSAPractice.DataStructure.Stack
 {
     public class NewStack
     {
