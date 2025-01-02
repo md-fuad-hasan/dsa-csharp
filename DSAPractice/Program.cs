@@ -1,5 +1,6 @@
 ﻿using DSAPractice.Algorithm.Searching.BinarySearch;
 using DSAPractice.Algorithm.Searching.LinearSearch;
+using DSAPractice.Algorithm.Sorting.SelectionSort;
 using DSAPractice.DataStructure.LinkedList.DoublyLinkedList;
 using DSAPractice.DataStructure.LinkedList.SinglyLinkedList;
 using DSAPractice.DataStructure.PriorityQueue.AscendingPriorityQueue;
@@ -22,8 +23,10 @@ namespace DSAPractice
           // NewDescendingPriorityQueue newDescendingPriorityQueue = new NewDescendingPriorityQueue();
           // NewDoublyLinkedList newDoublyLinkedList = new NewDoublyLinkedList();
 
-            NewLinearSearch newLinearSearch = new NewLinearSearch();
-            NewBinarySearch newBinarySearch = new NewBinarySearch();
+           // NewLinearSearch newLinearSearch = new NewLinearSearch();
+           // NewBinarySearch newBinarySearch = new NewBinarySearch();
+
+            NewSelectionSort newSelectionSort = new NewSelectionSort();
 
         }
     }
