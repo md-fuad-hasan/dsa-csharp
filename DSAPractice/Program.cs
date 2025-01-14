@@ -1,5 +1,6 @@
 ﻿using DSAPractice.Algorithm.Searching.BinarySearch;
 using DSAPractice.Algorithm.Searching.LinearSearch;
+using DSAPractice.Algorithm.Sorting.BubbleSort;
 using DSAPractice.Algorithm.Sorting.SelectionSort;
 using DSAPractice.DataStructure.LinkedList.DoublyLinkedList;
 using DSAPractice.DataStructure.LinkedList.SinglyLinkedList;
@@ -26,7 +27,9 @@ namespace DSAPractice
            // NewLinearSearch newLinearSearch = new NewLinearSearch();
            // NewBinarySearch newBinarySearch = new NewBinarySearch();
 
-            NewSelectionSort newSelectionSort = new NewSelectionSort();
+           // NewSelectionSort newSelectionSort = new NewSelectionSort();
+
+            NewBubbleSort newBubbleSort = new NewBubbleSort();
 
         }
     }

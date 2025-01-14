@@ -19,6 +19,7 @@ namespace DSAPractice.Algorithm.Sorting.SelectionSort
             ls.Add(i);
         }
 
+        // Pick the smallest then swap
         public IList<int> SelectionSort() 
         {
             for(int i =0; i < ls.Count-1; i++)
